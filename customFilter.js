@@ -11,12 +11,12 @@ function customFilter(array, callback) {
   return result;
 }
 
-const numbers = [1, 2, 3, 4, 5, 6];
+const numbersToFilter = [1, 2, 3, 4, 5, 6];
 
 // Example 1: Filter even numbers
-const evenNumbers = customFilter(numbers, (num) => num % 2 === 0);
+const evenNumbers = customFilter(numbersToFilter, (num) => num % 2 === 0);
 console.log(evenNumbers);
 
 // Example 2: Filter numbers greater than 3
-const greaterThanThree = customFilter(numbers, (num) => num > 3);
+const greaterThanThree = customFilter(numbersToFilter, (num) => num > 3);
 console.log(greaterThanThree);
